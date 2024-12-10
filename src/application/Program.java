@@ -13,7 +13,9 @@ public class Program {
 		Seller seller =  new Seller(21, "bob","bob@gmail.com", new Date(), 300.00,obj );
 		SellerDao sellerDao = DaoFactory.creatSellerDao();
 		
-		System.out.println(seller);
+		Seller seller1 = sellerDao.findById(3);
+		
+		System.out.println(seller1);
 		
 	}
 
